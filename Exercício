@@ -1,0 +1,27 @@
+using System;
+using System.Globalization;
+
+namespace exercicio resolvido 1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double nota1, nota2, soma;
+
+            Console.WriteLine("Nota 1° semestre: ");
+            nota1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.WriteLine("Nota 2° semestre: ");
+            nota2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            soma = nota1 + nota2;
+
+            if (soma < 60)
+            {
+                Console.WriteLine("reprovado ");
+            }
+                            
+            Console.ReadLine();
+        }
+    }
+}
